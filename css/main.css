@@ -43,20 +43,6 @@
   margin-right: 30px;
 }
 
-/* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
-  /* Hide all links, except for the selected tab */
-  .topnav a:not(.active) {
-    display: none;
-  }
-
-  /* Show the icon that should open and close the topnav */
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
 body {
   background-color: #f0f0f0;
 }
@@ -157,10 +143,25 @@ body#home {
   padding: 0px 10px;
 }
 
+/* When the screen is less than 800 pixels wide */
+@media screen and (max-width: 1000px) {
+  /* Hide all links, except for the selected tab */
+  .topnav a:not(.active) {
+    display: none;
+  }
+
+  /* Show the icon that should open and close the topnav */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
 /* When the screen is less than 800 pixels wide, if the user clicks on the icon */
 /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
 /* This media query sets the style for the unfolded topnav */
 /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
+
 @media screen and (max-width: 1000px) {
   .topnav.responsive {
     position: relative;
