@@ -185,4 +185,10 @@ body#home {
   .sidenav a {
     font-size: 18px;
   }
+
+  #myVideo {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
 }
