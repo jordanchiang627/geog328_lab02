@@ -161,7 +161,7 @@ body#home {
 /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
 /* This media query sets the style for the unfolded topnav */
 /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive {
     position: relative;
   }
@@ -190,5 +190,50 @@ body#home {
     width: 100vw;
     height: auto;
     object-fit: cover;
+  }
+
+  .content {
+    margin: 10px; 
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;  
+    display: block;
+    overflow-x: auto; 
+  }
+
+  th, td {
+    font-size: 16px; 
+    padding: 8px; 
+  }
+
+  img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: auto; 
+  }
+
+  .sidenav {
+    width: 100%; 
+    height: auto;
+    position: relative;
+  }
+
+  .sidenav a {
+    font-size: 16px; 
+    padding: 8px 12px;
+  }
+
+  .tables-container {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .column {
+    width: 100%; 
+    padding: 10px 0;
   }
 }
